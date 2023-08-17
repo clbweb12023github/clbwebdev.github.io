@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../dist/bundle.css" rel="stylesheet">
+    <title>Pokedex</title>
+</head>
+<body>
+    <div class="container mx-auto pt-10 h-screen">
+        <div class="bg-red-600 border-gray-700 flex flex-col h-full rounded-lg shadow-lg shadow-red-500">
+            <div class="flex gap-2 pt-5 pl-5 ">
+                <div class="relative">
+                    <div class="rounded-full h-14 w-14 bg-blue-500 mr-3 border-4 border-white absolute opacity-75 animate-ping"></div>
+                    <div class="rounded-full h-14 w-14 bg-blue-500 mr-3 border-4 border-white "></div>
+                </div>
+                <div class="relative">
+                    <div class="rounded-full h-6 w-6 bg-red-500 border-2 border-white absolute opacity-75"></div>
+                    <div class="rounded-full h-6 w-6 bg-red-500 border-2 border-white "></div>
+                </div>
+                <div class="relative">
+                    <div class="rounded-full h-6 w-6 bg-yellow-500 border-2 border-white absolute opacity-75"></div>
+                    <div class="rounded-full h-6 w-6 bg-yellow-500 border-2 border-white "></div>
+                </div>
+                <div class="relative">
+                    <div class="rounded-full h-6 w-6 bg-blue-500 border-2 border-white absolute opacity-75"></div>
+                    <div class="rounded-full h-6 w-6 bg-blue-500 border-2 border-white "></div>
+                </div>
+            </div>
+            <div class="flex shrink-0 items-end h-10 truncate -mt-4">
+                <div class="border-y-4 border-transparent border-b-black h-10 w-52"></div>
+                <div class="border-y-4 border-transparent border-b-black origin-bottom-left -rotate-45 h-16 w-16"></div>
+                <div class="border-y-4 border-transparent border-t-black h-10 w-20 grow -ml-7"></div>
+            </div> 
+            <div class="grow p-5 truncate">
+                <!-- Pokedex Content -->
+                <div id="content-wrapper" class="bg-white border border-2 border-gray-700 h-full shadow-inner shadow-black overflow-auto">
+                    <div id="content" class="p-5"></div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <script src="../../dist/bundle.js"></script>
+    <script src="../../dist/pokeapi-js-wrapper.js"></script>
+    <script src="./pokedex.js"></script>
+</body>
+</html>

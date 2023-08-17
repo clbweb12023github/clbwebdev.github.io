@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+    <!-- White circle (main body of the pokeball) -->
+    <circle cx="100" cy="100" r="90" fill="#fff" stroke="#000" stroke-width="10"></circle>
+  
+    <!-- Red semicircle (top part of the pokeball) -->
+    <path d="M15,100 a80,80 0 0,1 170,0 z" fill="red"></path> 
+
+    <!-- Black rectangle (middle line of the pokeball) -->
+    <rect x="5" y="95" width="190" height="10" fill="#000"></rect>
+    
+    <!-- Black circle (middle band of the pokeball) -->
+    <circle cx="100" cy="100" r="20" fill="#FFF" stroke="#000" stroke-width="10"></circle>
+</svg>
