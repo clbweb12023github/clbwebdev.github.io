@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<body>
+  <div class="w-full bg-gray-800">
+  <div class="container mx-auto py-5 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+    </div>
+    <span class="font-medium text-white">&copy; 2023</span>
+    <div class="flex gap-2">>
+    </div>
+</div>
+</div>
+<script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
+<script>
+    const P = new Pokedex.Pokedex()
+    const interval = {
+    offset: 34,
+    limit: 10,
+}
+P.getPokemonsList(interval).then(function(response) {
+    console.log(response)
+})
+  </script>
+</body>
+</html>
