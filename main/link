@@ -10,6 +10,16 @@
     <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
 </head>
 <body>
-    
+    <div class="content"></div>
+    <script>
+        const P = new Pokedex.Pokedex()
+        const interval = {
+            offset: 34,
+            limit: 10,
+        }
+        P.getPokemonsList(interval).then(function(response) {
+            console.log(response)
+        })
+    </script>
 </body>
 </html>
